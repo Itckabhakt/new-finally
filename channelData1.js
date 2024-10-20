@@ -52,7 +52,24 @@ const channelData = {
                 "key": "fc045df077e7669666b1b230e9aa3901"
             }
         }
+    },
+    "Fancode": {
+        "file": "https://a39aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/l8j2xgwt32/out/v1/fe72171ab2684ab8b9ee3e2ffcc9cff2/cenc.mpd",
+        "drm": {
+            "clearkey": {
+                "keyId": "159a2b4e1d2d7f16892d35d935a2fb34",
+                "key": "07809840dd0f511221ca78459167d1b3"
+            }
+        }
     }
 };
 
+var allowedDomain = "finallystream.pages.dev";
+
+
+var currentDomain = window.location.hostname;
+
+if (currentDomain !== allowedDomain) {
+  window.location.href = "https://telegram.me/FinallyLiveOwner"; 
+}
 
