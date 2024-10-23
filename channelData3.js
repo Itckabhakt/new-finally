@@ -3,8 +3,8 @@ const channelData = {
         "file": "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/manifest.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "abfc480ae7920a3ebd9e99e7b9a0d3e2",
-                "key": "63a7fe4e7899ba2bc5bbd4307398f3ff" 
+                "keyId": "6b232db5623b5faeaa68ce6576de7508",
+                "key": "cef716d8775a60cf3b9726f49d532bdf" 
             }
         }
     },
