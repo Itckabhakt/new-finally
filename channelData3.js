@@ -1,10 +1,10 @@
 const channelData = {
     "Ten": {
-        "file": "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/manifest.mpd", 
+        "file": "https://check.aadrapristha.workers.dev/https://linear007-gb-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(skysportscricket)/manifest_720-120.asa.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "6b232db5623b5faeaa68ce6576de7508",
-                "key": "cef716d8775a60cf3b9726f49d532bdf" 
+                "keyId": "00053ac1e9b1231eed3eb4e3540b3ae1",
+                "key": "0f03d8541826af3d9acbac975d751165" 
             }
         }
     },
