@@ -1,5 +1,5 @@
 const channelData = {
-    "Ten": {
+    "Tn": {
         "file": "https://stream.aadrapristha.workers.dev/https://linear007-gb-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(skysportscricket)/manifest_720-120.asa.mpd", 
         "drm": {
             "clearkey": {
