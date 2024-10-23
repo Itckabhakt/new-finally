@@ -1,10 +1,10 @@
 const channelData = {
     "Ten": {
-        "file": "https://check.aadrapristha.workers.dev/https://linear007-gb-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(skysportscricket)/manifest_720-120.asa.mpd", 
+        "file": "https://medialive.akash-go.com/out/v1/fb49908b8b3247a8ba7329726bad5753/index.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "00053ac1e9b1231eed3eb4e3540b3ae1",
-                "key": "0f03d8541826af3d9acbac975d751165" 
+                "keyId": "42ed519238ae4e9298738b6b67a1b91b",
+                "key": "6282b6a6eb11b112599090c56a9d48e0" 
             }
         }
     },
