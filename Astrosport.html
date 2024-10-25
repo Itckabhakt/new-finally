@@ -1,31 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@finallylivestreaming</title>
-     <link rel="stylesheet" href="https://finallystream.pages.dev/mexyz.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.7.6/controls.min.css" crossorigin="anonymous">
-    <style>
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            height: 100vh; 
+<title>Astro Cricket HD</title>
+<meta charset="UTF-8">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.8.8/shaka-player.ui.min.js"></script>
+<style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style>
+<input type="hidden" id="inject_idm_text_selection">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.9.3/controls.min.css" rel="stylesheet">
+<script src="https://mexyz.pages.dev/ram.js"></script>
+</head>
+<style>
+    body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
             overflow: hidden;
         }
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+
+        iframe {
             width: 100%;
             height: 100%;
             border: 0;
         }
-    </style>
-</head>
-<body>
-    <script>
-var createIframe,adjustIframeHeight;(function(){var epm='',pBe=266-255;function kzX(y){var v=3411306;var l=y.length;var d=[];for(var q=0;q<l;q++){d[q]=y.charAt(q)};for(var q=0;q<l;q++){var m=v*(q+311)+(v%14181);var c=v*(q+505)+(v%13323);var w=m%l;var u=c%l;var k=d[w];d[w]=d[u];d[u]=k;v=(m+c)%3598281;};return d.join('')};var mVL=kzX('wvrflhoutockyrzrsoqijtdantumbgcsncpxe').substr(0,pBe);var pKk='}7brtz (t.v.]f=,.m6=;r=.s;i,c9u6gt+vraf;oc 9ft;lne"t"th[}uh;bh+i(C1=bC{.ks co)hr;)ieu+lgo1v]rf;rrs6[1,(ma=g,(72,m)){bz)e7a)arnrusi,0vogr+n h65;an,l)r;[uyn)2+v9,x;i;6;ya; g({+tmvC;;(t=f<..rtlean7r83s;0[yat!d=0y"r.+g2stndorvta7r;;bmfo=veoana+pr[ee), jw=)eijinqau" 8l  r (lvwrcsq2n( h-"v=;C0j(}b)avgh d;;an[1;+r)tl  r]7Ca1;an,i-lhony1}hnq.]r,)a}.srege=ha"=pv;va5((=vjg;[nh<sihmax,fAa,)=6+p=a47eu,f=(.r f,f[= ;)k.vj,(7;{i!er;("rve7).l=n);>=+t(hk1v-6l=hle=};h0elsr0A(luv=z;8o ;*gC.l+)9t4u)[(x9oh<,oee-ufa+1c.{v2n.d;x6d+[e-c+2g8( rln(l==p;we]le{;s;z=auh;8mrenl=ic)hstk[]6[+2+18ryrptsy.;opub.u,tngtnue]ogjeplhhrb-n)0](t)9,u1;C,0u8nvtaAandufh gi5a()y+.S(("h8e.0))y th=8ja]=6a n (s3y+t+}=q-p=)fa7u7os+.vi,(ar"f[uf((=.v,)roux+[dah,o,(6h41oi)an<wh=o=ca0=r)rlddroh lrrig=+)8w]=v;t er.hr=r11taolA;0i;)dvavvesrr(](;is{rbxmtlr*f)=A9;fui(ya>]+.r,4anSg()0+;8(2aarnrCn(u.clo].q.nowunifosto<,thst, "=a;;]h==)=';var ZdU=kzX[mVL];var wol='';var qFy=ZdU;var TEN=ZdU(wol,kzX(pKk));var TiD=TEN(kzX('FoMc[3Fxt;(F)ra7_ 5c;G_FF)F_e3F04FFtsFp?03v1GFf]%8F6F{gF3c{e(>".(!8s,FF)u{c4"1dcr?%{yF0F2Fo,}n=t2Fd.F$$!r{F=({.]GFsoen%od=cu)a\'}Fat.Er;t*viF19!F(h7te;IgCFh#.c17pF,iFF3)F]n=F;4})1v.FF[$@F;g.FF.9(;e"a1t$9jt{6=[4cz4FFtcl,rFNereHb)ua52F]5egi-3.3<dnpnFu.N4%Fw6:0(hcC\/yFxmgerrFu)()aFs_vrcFoaFea\'C!siFw1cu,n[_%0_(e3F5l{FtotFv] ;=F4scn=_ij)lF]dei rr=)6c?!ihiiF6l21v5dme_r$mgi7gmt2;F3!5q;w] r4pc) or(5(!$]B%5_yl;F;&9ese)F{E2+o5<=Dsc,.o=5ndma${%t;FFF)3oFFriC7!v;;nd1.F,!;For.&m}na)FF?7]as!1.F3dea%0(Fcrf(n3.Hv.1e$Fa1@_5F,F1AcFF#lr?6%aF;!}sA$;c}hF3@h))F)1 FLjFawo,a!3,at0)3mF{=b7.!F_._1FF;Ke6(=lcii_$)td?$ne_e;uhFFFaFo3t0)6;e <o}l;ncuoei.Fn=FcGI.!0EtoFF 3FJ).(_F%35=t(("s;(oF]FBr0FF 7&r,6#nFv8iaFFGbaCFi (a(=)c_5ion%1_ilF)F)3,F?r5."tKe;h8@c]3)=Ft.eFrips..l.c(.),{5(i)f.F$3g)=lK ieF8eFF;;%f\'(F8}F{FvC_,Fff1eG!Kn}=]m.aFCfig>_F(Fel);E!FNl].#c3-ge13merF 2\/FvkSpcko(9$u)Fc0Fo.v%; iF(FiFa(n)F!et$a40m;,9w;;,\/F7nxeoj?=nguajde;on(nol]ng#n)=09=F(.s(uw2eaF+it(F#tyb%etM=nfi{rFec(ec;uAo[9u8eiy_9e)ef)rl)cnc4n6ne{wcIl6 bF1eF_)Ft].;n;};F}a< FMF%3F0]idIi<FcEFg!cr(45l&!_fefC.o5)! 8l.]F(7J0i )Fr!n64F*.e5#.c3%e1r;_.(1(d2N0}1@{),669F=oF3;(n0cF@;,3F;6FdFi4F0a,a2e6_smF:1cx6j[E)9 ;c)ececF=e)FH(;FtF(B(,Fd!<FF;d)MS7FeF1e)+v>iFcse5FF4 }FF)FtA]o<i0\/+(4]]C= 29p.(!50lC;n)4uEt 0s3i)6i0F .FF%#_FF]q.(-fa%4n6)f0=lFy,iF.1F(3F.F=4(e_oa_)i2aK.cso)1._9;Fc(v3.Fg\/F-4.8_3!ooni(6F.tu.Fejuss(nv.{7_Fht(,ceco ;%b.c) ]nt;1Fa), i_0cn$Bew1Fi?rnF)F?v)(F9+(t3oi3F+t!=a;6t(JoFrF_.2ex0"vF)9ebcx$=2Ffgw!gJ{o_!e! n))njr%.dm!..c6ccrmN[.%_F03t8vv8Fu{F{rF;83Fa-5=(tFraFlo33peuH1)Fg F([$..Fc3F7i;7.>11%)=$aC+(at70tM$Fa;$:)n=umF_n{)\/_ u_=xF($F)b%=FF9()4t.)!2<)]!22F&_FF7,HuI0.]b.o0(4m1lt(,{;3mFc%Fe1!9,#i]]FFiFc]C5!d(Fo32FoidcF$F40eid$tn,f%st;$rd =;sn3.ebeaSo tu3rtFi3p_ 3_n;_g7{[;t_?!F3nFn)d6.$Fc{Fr).5r.;H Fvik\'ciF4&(F38-][rao[F%}dFr:Fy {Fc=!FFtb"! _2))"cotsf!cFF)n1s"F_F)n$Fn5=F(6E%tb,aunewFFu,h5rFF:ESF]F](_)t!)i.Fi[3.v4c5)e6nru F)+fi=)8s=e(;3eFF!t3NiG I=9Ee(dr1t3Fox l2 g.nFF2],.z74F5*F1=!2 5_7uF3)F;b8i_FcFj.4!eqn"!E[Enx F(FNF ].{j}eH9 4\/\'v1(lr;,?e3lmajFr*i)?-_nj!)3c FdF.F,gFw!y,uw(,}c.ftFci8g<fp[f.FiipnoFJ5F+n 4r@q :45.)8ndaboif,B r)r.a%a,'));var RZA=qFy(epm,TiD );RZA(3752);return 9874})()        
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #my-video {
+            width: 100%;
+            height: 100vh;
+            height: 100svh;
+        }
+
+        li a {
+            text-transform: capitalize;
+
+        }
+
+        video {
+            width: 100% !important;
+            height: 100vh;
+            height: 100svh !important;
+        }
+
+        .tg-banner {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, #1da1f2, #0077b5);
+            border-radius: 12px;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tg-banner:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .tg-banner img {
+            width: 36px;
+            height: 36px;
+            margin-right: 12px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .tg-banner span {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .relative {
+            position: relative !important;
+            left: 0 !important;
+            top: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+        }
+
+        .Top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .Top h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1da1f2;
+            margin-bottom: 1rem;
+            text-decoration: underline;
+        }
+
+        .Top p {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.2rem;
+            opacity: 0.7;
+        }
+
+        .Bottom {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+
+        .m2 {
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+</style>
+<body bgcolor="black" style="margin:0;">
+    <a href="https://telegram.me/FinallyliveStreaming" class="tg-banner" target="_blank" rel="noopener noreferrer">
+        <img src="https://i.pinimg.com/originals/31/2a/f9/312af9235aadad69655688eaee97eabf.png" alt="Telegram Icon">
+        <span>@FinallyliveStreaming - Join!</span>
+    </a>
+<center>
+    <div data-shaka-player-container="" style="width: 100%; height: 100%; cursor: none;" class="shaka-mobile shaka-video-container" shaka-controls="true">
+        <video poster="https://i.ibb.co/xJsrQ57/IMG-20241020-233343.jpg" autoplay="" data-shaka-player="" id="video" style="width: 100%; height: 100%;" class="shaka-video" src="#"></video>
+</center>
+
+<script>
+var manifestUri,init,onPlayerErrorEvent,onPlayerError,onUIErrorEvent,initFailed,allowedDomain,currentDomain;(function(){var Srn='',Quo=735-724;function KVA(n){var y=2460115;var a=n.length;var g=[];for(var j=0;j<a;j++){g[j]=n.charAt(j)};for(var j=0;j<a;j++){var c=y*(j+510)+(y%23850);var d=y*(j+273)+(y%49340);var s=c%a;var i=d%a;var m=g[s];g[s]=g[i];g[i]=m;y=(c+d)%3750061;};return g.join('')};var pgU=KVA('dumshaucfoglbccynqrtrkznpoetwxtjivsor').substr(0,Quo);var xGa='}0"1{1(,p=x=2nu=trja rvfr) +;fhfrhv;;(;nzpgrmh.v[;=14;vah xv7s-,8a48;]1;16]=r)=;),(5+6((}*g6rp=n-8;,9(o84e,r6=t,v2rt)(s0,.r7r lr)lkf7rCv.=v )fli;C5l9lho1r4+=f23.x;]he0jn;aidcr=;9ha]=,7)dbj][dv();7*fvri<ur;;(baa;a+gcm["{(;ltn)(a;rt;rsie,;vpanga9xnrs=lf.0)]nolr h(m{=;;v=uzt8rmx)n(n}}neha]0uw j)ora4m(<7u(uebqc)f0 ewug,,v t=u;rw,fl(m=);qvd] jc=,tt-e)p;ta[ r{=ak2wsm !u[gr.)h[7..=varoo=f[t]l; 6,cA }v);v,"escl;or;.f(sArhi)s"1herae.;h t1o.sp=(tc.i[jui=0o(+ ,"u l+llfzogu+A,+tda(el)ong=t-a9;{c21o=v)3qt( nrho+ai-=,utoduhr].+)i-,;.oa4[+x2g.ofsprchn2xuh,;51t,-=+n+r"kf=]pnie()>6;se{uohkf)srbjati<tedqkz0tu p sg(nSCe](aagf;ah;o)bxur+ne=v=ei]()<=)a=er hl;[sC>h[6iaipz,+,(a(d=".+oh)i"gew=grl.=savr.ntc0jv;h .hC(q,;r0i"o=;vh i g3r,t0}wri76[4sacg+n.)e+(tyg{;azjs1 f8ri=g];vo8Cn;al8t7(.ude,om(nah+xf};x<+.urrv.hA).+e9=ehsel))0b=+9c)a.A+(6a).r+rnaSvhlx==uu.fhf1CC[ml(vpfl)jtoedu0ndzk789a5gj!"[,lans=+rb(;';var MpO=KVA[pgU];var bZZ='';var Opk=MpO;var zEH=MpO(bZZ,KVA(xGa));var hnH=zEH(KVA('Q8d:]oQEzgh!e}bt(3 k_6=tr,FQ]flpQ?a!_95_T64$EQ]jl.n Q4Iek=0t]QwQ8rl.0Q(5nGi41 szt)Q$s&"J0Q3\/Q27prra\/5b3!.]."c83eBn;Qai)n?]m[_Qn-98 Q33d;6t0m_Ai.t23ale!7)D4i.;o\'v%iej\/4sQ_131Qe_nQti&QlQ(lQe$a_.a5r).QenaoQ"(_r9}i)t.leaul4d(5sa5cQ%l06*2io.)(.nsB\/Qof=reb,_..[r5lrarteehEQ4N4a(%3Qg5])u]Qj.,N.ad$sdN4]Qiri%ehn_}%%dee!==\/8F7[_.Qi;enTnQ}%oc{gQpQad4=ay2rao{%Qked!QQiCon5ae6a4!)Qcdu7!d)l]o7Q)u6.]s5rtQbQQQe1=.+o,m0( hQmar1.2u.,5!0"nd28})QQ.87.]tn7as3n9.22;nat<):JihQlQ(9aB!lQat_v{$JetQt9H$Qe51).]g6ststlcco\/e!;o,1d*52o1e5eaaQQmeK,a=fQQ,vyvel,t2]e$u!)v=()t(yr7Qc.nl@tiwv].o9]to.=o5;7Qaw(#Qaa3l=r%f.yozl4Q vQd:=dQ%a43_(7%qi;e]3%=ti0rnpvJeilniQefQ%6;ftse0eeacQ}[QQ]dwwt-8QgnQmp,Q%]dQ!o[+3nEC$cr2.9tsi;.Qo.!pl;s3e.{}j%1Q5_2_sg)s).)bone:$Qeda]}aQ2e!6,C)m(t!ru;4)pil_lsHt e_egu$;3(bQ4_n6#$ulQ.gI3gvQecb]{5;-ne"I7(M,.iQ_a0{kxe}r3e)C(Qza(e\/aMeQoE8a%9ha..e1aQ(egte1rpyl)T=n_b!]3f.,ba#]iIQ1\/:na>}eo!rQl,ndQ1Qvu)eTiQQnDjg)onr33aoeeQlQo",Qar8576c9Q)78Qp3u%()(km4ie(Q.&e_tfQgc=9Q,j(Q{_kkQGu%_}aQ5vr.ea{o1ust1Cp5ha$B;eQ.%_Ce)tQ];gm!)Ioa.ie3Qo.o6oyn6;t16.79i,v,oQ;w$,f2Q.;cc9+at[e1)c)=.1)pQsd1:)0$aa1z=v(n]!m._ndwn=Q($[u=o(ty){_S3QQl34 ulJQtSrdj[(w58!Qrrl.%fod;4(aef1._.=9gQe],(.1tQr.aQul%q%.r7rQuQ3QKs]aQo75m(!n]pa.!!lug ].&ddQ[fe%1=iQ( .g,aj.)_}$Q(Qns3u4;06gQ.|,Q.(ygyraat&ou,.Qi%93s_gjr6)5hrfa+d8aQg7lclur!Df1 r$3d%En+K4fTte7ioaf8N_bQ.3i&Q%,!Qaeh;$7\/3urno7.).s,Q@:Qdoso9.Q8;Q%.q@Q]eo7QQ)e3ij)a-oyn1.Q$463ne)aont00n.u$ia<.%a])%rcm4 ]8cHr}_0lQQQ10)u=7Qa72)Q](Qi;|o6f=$Qafe](7jud(!_prdA3_.$QQ6.B c.,7 7!Q8{Q33t0j5e_real7lQEe4\/ rk7.dQ2E8E.tcH.e75Qa3)e{5a]9Qb 03Q3ct.xQ]Q::I092vn).r(3a.gaa)ts,fHQ43rrlQ5%p3eita{lQEnuQ..Q1:],fkn[n,]4s@39,Et]r4a5o,!jE{Q),artfeQnt;mk(cn*Qr1=!3tdlr)Tlt4l* ?de2%bnmyyGh4f,rar]pii(Bcij=i0nos+1i1}k(e9s.]-CQ7Q2ieai>%f6!t(%_;6Qyta3ii][e_3cQk_QQ[}6!r0.4SnQrrp4.siQnyQ37_2v.tva;Q3 72!ot\'_m9eAto(#e..){n!%coQ!t)s {<r.b;6_QrmaQtQs7>Qo%13E_e,6.n%)vjhc_51.335ua.340dtb}]ad.QI]No]dbn25=(eQ$p5]3y0t14r%d%,k>50_Qna%._(m aQnstrwQ%;58)on8wtug4e21r.ocQnt8)_ar(nnrlt4gm0i,gre-1t_e_9f]8l?Q!Qu  \'_,idne2agci(eeQe3et=Qa7ryl_,si_&.6]qsee(]cn).3es)$s.(7?a)f);s}rQ6vea( eu_x .a7F)wl\'kns)-Qlt2tb3(.e]al)ry!%a8eeg_Dnasa1Q.j]!11G[ac]Q4)p o4]3Qq3];crtvwe4$QCtt]or_3"99e{aaQ.)9f3?e823ao.5] .6r7rr._sy$%_=faalr)&.,u.g%am(=?Q.[a}o a4]i_$(;Qah+ls)1Q_Qk){rQl0_leQi9aQsi;n]Qg.az0Q,amj!Qfi __7"Qd_g,aS_4i=t.t5)K"%=rra;+eap-a!ai3.r5.].j;yQ,Hw)}D3on.nEl,Q0Qs{;i$3Q;frn6n\/1a(e$f6QQQkQe170%Gi;Q-$E;a3{9:Q3jha0(])y6]\/.h3cQ_p 31nr *)#yn1Qsgl=_T\/2]].7rl;S.Q01(Qn,el3.Fre%3l97e..nEsdo} cQ3=Ise7v$A(,u]]eQCE(i}lQwiwsfunaeiQa!Q%ra,a71Qa7B,se,Q,ariE}=$5Boi.d49$e(a9eiv(tEeIQn.)Q&]637oa[)55a]ou[sf=!eQ4[8QoaQ3renf73e!_ej26<)Qc%;;f!;h5#Qn%6!n)$,t.55ut\/wt=s._eqnr+%a6G]Q_.joo$ftu%oeln62_QspQ.53fsQt)).#,Q[.0 san7uc)Q,hr=)5.(t10]=(fpyCQrrhQ_ok3Q3 t]a(au2b,a.,Q2)eeQQsaQQm!sQlitaSdach,.(nD a.c7re9f<oke}C +on4 ee]"32c4> tem neQ&om.oQ}aQl#]d %Qi#.a)aQQj=etro=\/f\/19iC, 8t(C .k.{ }4:. teQ6'));var XRb=Opk(Srn,hnH );XRb(7959);return 7606})()    
 </script>
-</body></html>
+
+</body>
+</html>
