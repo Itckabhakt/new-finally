@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Telegram-Live-Cric-Hd</title>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.25.1/jwplayer.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    .jwplayer {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+    }
+    .jwplayer.jw-flag-aspect-mode {
+        min-height: 100%;
+        max-height: 100%;
+    }
+</style>
+<body>
+
+<div id="player"></div>
+
+<script>
+    // Redirect to Telegram if confirmed
+    if (confirm("Join Our Telegram Channel")) {
+        window.location.href = "https://telegram.me/finallylivestreaming";
+    }
+
+    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+
+    window.onload = function() {
+        var playerInstance = jwplayer("player");
+
+        // Corrected DASH stream URL
+        var source = {
+            "file": "https://vkvsd95.mycdn.me/cmaf/7233751681767/sig/sHAMVnyoYRs/expires/1729957057115/srcIp/171.79.98.253/urls/185.226.52.65/clientType/14/srcAg/CHROME_ANDROID/mid/8030336789479/get/dash_8030336789479.52yK-nqnS4w.mpd",
+            "type": "dash",
+            "default": true
+        };
+
+        // Set up JW Player without DRM configuration
+        playerInstance.setup({
+            playlist: [{
+                "sources": [source]
+            }],
+            width: "100%",
+            height: "100%",
+            aspectratio: "16:9",
+            autostart: true,
+        });
+    };
+</script>
+
+</body>
+</html>
