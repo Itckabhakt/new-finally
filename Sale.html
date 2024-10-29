@@ -47,29 +47,30 @@
         margin: 15px 0;
     }
     /* Telegram button styles */
-    .telegram-btn-square {
+    .telegram-btn {
         background-color: #0088cc;
         color: white;
         font-weight: bold;
-        font-size: 1em;
-        padding: 10px 20px;
-        width: 250px;
+        font-size: 1.2em;
+        padding: 15px 30px;
+        width: 300px;
         text-decoration: none;
         display: inline-block;
-        border-radius: 8px;
+        border-radius: 15px;
         margin: 15px 0;
+        transition: transform 0.3s;
     }
-    .telegram-btn-rectangle {
-        background-color: #0088cc;
-        color: white;
-        font-weight: bold;
-        font-size: 1em;
-        padding: 10px 20px;
-        width: 250px;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 30px;
-        margin: 15px 0;
+    .telegram-btn:hover {
+        transform: scale(1.05);
+    }
+    .telegram-btn:active {
+        animation: bounce 0.3s ease;
+    }
+    /* Bounce animation */
+    @keyframes bounce {
+        0% { transform: scale(1); }
+        50% { transform: scale(0.9); }
+        100% { transform: scale(1); }
     }
     /* Small bold heading styling */
     .small-heading {
@@ -102,15 +103,15 @@
 </head>
 <body>
 
-<div class="name">MARKET LOAD</div>
+<div class="name">ANURAG BOMBAY</div>
 
 <div class="photo">
     <img src="https://i.ibb.co/dW9ZLHC/20241029-134338.jpg" alt="Your Photo">
 </div>
 
-<div class="main-heading">TELEGRAM KA NO. 1 LOAD CHANNEL</div>
+<div class="main-heading">CRICKET KA SABSE BADA ANYLIST</div>
 
-<a class="telegram-btn-square" href="https://t.me/yourchannel" target="_blank">JOIN TELEGRAM CHANNEL FOR FREE</a>
+<a class="telegram-btn" href="https://t.me/yourchannel" target="_blank">JOIN TELEGRAM CHANNEL FOR FREE</a>
 
 <div class="small-heading">💰 Mauka Hai Lakho Kamane Ka 💰</div>
 
@@ -136,7 +137,7 @@
     </div>
 </div>
 
-<a class="telegram-btn-rectangle" href="https://t.me/yourchannel" target="_blank">JOIN FAST TIME OUT</a>
+<a class="telegram-btn" href="https://t.me/yourchannel" target="_blank">JOIN FAST TIME OUT</a>
 
 <script>
 // Timer script
