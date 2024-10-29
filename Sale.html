@@ -19,27 +19,27 @@
         margin: 0;
         text-align: center;
         padding-top: 20px;
+        height: 100vh;
+        justify-content: center;
     }
     /* Header name styling */
     .name {
-        font-size: 3em;
+        font-size: 4em; /* Increased font size */
         font-weight: bold;
         color: #fff;
-        text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
-        margin: 20px 0;
-        font-family: 'Roboto', sans-serif; /* Updated font */
-        letter-spacing: -1px; /* Adjust spacing between letters */
-        word-spacing: 2px; /* Adjust spacing between words */
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        margin: 15px 0;
+        font-family: 'Roboto', sans-serif;
     }
     /* Circular photo styling */
     .photo {
-        width: 200px; /* Increased width */
-        height: 200px; /* Increased height */
+        width: 250px; /* Increased size */
+        height: 250px;
         border-radius: 50%;
         overflow: hidden;
-        border: 5px solid white;
-        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
-        margin-bottom: 20px; /* Add margin for spacing */
+        border: 6px solid white;
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.4);
+        margin-bottom: 20px;
     }
     .photo img {
         width: 100%;
@@ -48,50 +48,41 @@
     }
     /* Main heading styling */
     .main-heading {
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: bold;
-        line-height: 1.5;
-        margin: 15px 0;
+        line-height: 1.4;
+        margin: 20px 0;
     }
     /* Telegram button styles */
     .telegram-btn {
         background-color: #0088cc;
         color: white;
         font-weight: bold;
-        font-size: 1.2em; /* Increased font size */
-        padding: 15px 30px; /* Increased padding for a larger button */
-        width: 350px; /* Increased width */
+        font-size: 1.5em;
+        padding: 15px 35px; /* Increased padding for a larger button */
+        width: 400px; /* Larger button width */
         text-decoration: none;
         display: inline-block;
-        border-radius: 15px;
+        border-radius: 20px;
         margin: 15px 0;
         transition: transform 0.3s;
         text-align: center;
-        white-space: nowrap; /* Ensures text stays on one line */
+        white-space: nowrap;
     }
     .telegram-btn:hover {
         transform: scale(1.05);
     }
-    .telegram-btn:active {
-        animation: bounce 0.3s ease;
-    }
-    /* Bounce animation */
-    @keyframes bounce {
-        0% { transform: scale(1); }
-        50% { transform: scale(0.9); }
-        100% { transform: scale(1); }
-    }
     /* Small bold heading styling */
     .small-heading {
-        font-size: 1.2em;
+        font-size: 1.5em; /* Increased font size */
         font-weight: bold;
         margin: 20px 0;
     }
     /* Timer styling */
     .timer {
         display: flex;
-        gap: 5px; /* Reduced gap */
-        font-size: 1em; /* Decreased font size */
+        gap: 8px;
+        font-size: 1.5em; /* Increased font size */
         font-weight: bold;
         margin: 10px 0;
         color: #ff0000;
@@ -102,10 +93,10 @@
         align-items: center;
     }
     .timer-number {
-        font-size: 1.5em; /* Reduced size for timer numbers */
+        font-size: 1.8em; /* Increased size for timer numbers */
     }
     .colon {
-        font-size: 1.5em; /* Reduced size for colon */
+        font-size: 1.8em; /* Increased size for colon */
         color: #ff0000;
     }
 </style>
@@ -120,7 +111,7 @@
 
 <div class="main-heading">TELEGRAM KA NO. 1 LOAD CHANNEL</div>
 
-<a class="telegram-btn" href="https://t.me/yourchannel" target="_blank">JOIN TELEGRAM CHANNEL FOR FREE</a>
+<a class="telegram-btn" href="https://telegram.me/+er7vZ_4VHpthZWZl" target="_blank">JOIN TELEGRAM CHANNEL FOR FREE</a>
 
 <div class="small-heading">💰 Mauka Hai Lakho Kamane Ka 💰</div>
 
@@ -146,7 +137,7 @@
     </div>
 </div>
 
-<a class="telegram-btn" href="https://t.me/yourchannel" target="_blank">JOIN FAST TIME OUT</a>
+<a class="telegram-btn" href="https://telegram.me/+er7vZ_4VHpthZWZl" target="_blank">JOIN FAST TIME OUT</a>
 
 <script>
 // Timer script
@@ -164,7 +155,7 @@ function countdown() {
 
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const minutes = Math.floor((distance % (1000 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         document.getElementById("days").innerText = days.toString().padStart(2, '0');
