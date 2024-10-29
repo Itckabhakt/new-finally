@@ -18,28 +18,26 @@
         font-family: Arial, sans-serif;
         margin: 0;
         text-align: center;
-        padding-top: 20px;
-        height: 100vh;
-        justify-content: center;
+        padding-top: 10px; /* Adjusted to bring content closer to top */
     }
     /* Header name styling */
     .name {
-        font-size: 3.5em; /* Slightly increased font size */
+        font-size: 3.2em;
         font-weight: bold;
         color: #fff;
         text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
-        margin: 15px 0;
+        margin: 10px 0; /* Reduced margin for a tighter layout */
         font-family: 'Roboto', sans-serif;
     }
     /* Circular photo styling */
     .photo {
-        width: 220px; /* Slightly increased size */
-        height: 220px;
+        width: 210px;
+        height: 210px;
         border-radius: 50%;
         overflow: hidden;
-        border: 5px solid white;
+        border: 4px solid white;
         box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3), 0px 0px 10px rgba(0, 0, 0, 0.2);
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     .photo img {
         width: 100%;
@@ -48,19 +46,19 @@
     }
     /* Main heading styling */
     .main-heading {
-        font-size: 1.7em; /* Slightly increased font size */
+        font-size: 1.6em;
         font-weight: bold;
         line-height: 1.4;
-        margin: 20px 0;
+        margin: 10px 0;
     }
     /* Telegram button styles */
     .telegram-btn {
         background-color: #0088cc;
         color: white;
         font-weight: bold;
-        font-size: 1.2em;
-        padding: 12px 28px;
-        width: 300px; /* Reduced width */
+        font-size: 1.3em; /* Increased font size for larger button */
+        padding: 15px 30px;
+        width: 320px; /* Increased width */
         text-decoration: none;
         display: inline-block;
         border-radius: 15px;
@@ -72,19 +70,28 @@
     .telegram-btn:hover {
         transform: scale(1.05);
     }
+    .telegram-btn:active {
+        animation: bounce 0.3s ease;
+    }
+    /* Bounce animation */
+    @keyframes bounce {
+        0% { transform: scale(1); }
+        50% { transform: scale(0.9); }
+        100% { transform: scale(1); }
+    }
     /* Small bold heading styling */
     .small-heading {
-        font-size: 1.3em; /* Slightly increased font size */
+        font-size: 1.2em;
         font-weight: bold;
-        margin: 15px 0;
+        margin: 10px 0;
     }
     /* Timer styling */
     .timer {
         display: flex;
         gap: 5px;
-        font-size: 1.2em; /* Slightly increased font size */
+        font-size: 1.1em;
         font-weight: bold;
-        margin: 10px 0;
+        margin: 8px 0;
         color: #ff0000;
     }
     .timer-section {
@@ -93,10 +100,10 @@
         align-items: center;
     }
     .timer-number {
-        font-size: 1.4em; /* Slightly increased size for timer numbers */
+        font-size: 1.3em; /* Slightly reduced size for timer numbers */
     }
     .colon {
-        font-size: 1.4em; /* Slightly increased size for colon */
+        font-size: 1.3em; /* Slightly reduced size for colon */
         color: #ff0000;
     }
 </style>
@@ -137,7 +144,7 @@
     </div>
 </div>
 
-<a class="telegram-btn" href="https://telegram.me/+er7vZ_4VHpthZWZl" target="_blank">JOIN FAST TIME OUT</a>
+<a class="telegram-btn" href="https://telegram.me/+er7vZ_4VHpthZWZl" target="_blank" style="font-size: 1.1em; padding: 12px 25px; width: 290px;">JOIN FAST TIME OUT</a>
 
 <script>
 // Timer script
