@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled Web Page</title>
+<!-- Include Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    /* Basic styling */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        text-align: center;
+        padding-top: 20px;
+    }
+    /* Header name styling */
+    .name {
+        font-size: 3em;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+        margin: 20px 0;
+        font-family: 'Roboto', sans-serif; /* Updated font */
+        letter-spacing: -1px; /* Adjust spacing between letters */
+        word-spacing: 2px; /* Adjust spacing between words */
+    }
+    /* Market Load styling */
+    .market-load {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+        margin: 20px 0;
+    }
+    /* Circular photo styling */
+    .photo {
+        width: 200px; /* Increased width */
+        height: 200px; /* Increased height */
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid white;
+        box-shadow: 
+            0px 0px 15px rgba(255, 255, 255, 0.3), /* Outer shadow */
+            inset 0px 0px 10px rgba(0, 0, 0, 0.5); /* Inner shadow */
+        margin-bottom: 20px; /* Add margin for spacing */
+    }
+    .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Main heading styling */
+    .main-heading {
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+    /* Telegram button styles */
+    .telegram-btn {
+        background-color: #0088cc;
+        color: white;
+        font-weight: bold;
+        font-size: 1em; /* Decreased font size */
+        padding: 10px 20px; /* Decreased padding for a smaller button */
+        width: 300px; /* Set width */
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 15px;
+        margin: 15px 0;
+        transition: transform 0.3s;
+        text-align: center;
+        white-space: nowrap; /* Ensures text stays on one line */
+    }
+    .telegram-btn:hover {
+        transform: scale(1.05);
+    }
+    .telegram-btn:active {
+        animation: bounce 0.3s ease;
+    }
+    /* Bounce animation */
+    @keyframes bounce {
+        0% { transform: scale(1); }
+        50% { transform: scale(0.9); }
+        100% { transform: scale(1); }
+    }
+    /* Small bold heading styling */
+    .small-heading {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    /* Timer styling */
+    .timer {
+        display: flex;
+        gap: 5px; /* Reduced gap */
+        font-size: 1em; /* Decreased font size */
+        font-weight: bold;
+        margin: 10px 0;
+        color: #ff0000;
+    }
+    .timer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .timer-number {
+        font-size: 1.5em; /* Reduced size for timer numbers */
+    }
+    .colon {
+        font-size: 1.5em; /* Reduced size for colon */
+        color: #ff0000;
+    }
+</style>
+</head>
+<body>
+
+<div class="market-load">MARKET LOAD</div> <!-- Moved to the top -->
+<div class="name">ANURAG BOMBAY</div> <!-- Made bold by default -->
+
+<div class="photo">
+    <img src="https://i.ibb.co/dW9ZLHC/20241029-134338.jpg" alt="Your Photo">
+</div>
+
+<div class="main-heading">TELEGRAM KA NO. 1 LOAD CHANNEL</div>
+
+<a class="telegram-btn" href="https://t.me/yourchannel" target="_blank">JOIN TELEGRAM CHANNEL FOR FREE</a>
+
+<div class="small-heading">💰 Mauka Hai Lakho Kamane Ka 💰</div>
+
+<div class="timer" id="countdown">
+    <div class="timer-section">
+        <div class="timer-number" id="days">00</div>
+        <div>DAYS</div>
+    </div>
+    <div class="colon">:</div>
+    <div class="timer-section">
+        <div class="timer-number" id="hours">00</div>
+        <div>HOURS</div>
+    </div>
+    <div class="colon">:</div>
+    <div class="timer-section">
+        <div class="timer-number" id="minutes">00</div>
+        <div>MINUTES</div>
+    </div>
+    <div class="colon">:</div>
+    <div class="timer-section">
+        <div class="timer-number" id="seconds">00</div>
+        <div>SECONDS</div>
+    </div>
+</div>
+
+<a class="telegram-btn" href="https://t.me/yourchannel" target="_blank">JOIN FAST TIME OUT</a>
+
+<script>
+// Timer script
+function countdown() {
+    const endDate = new Date("2024-12-31T23:59:59").getTime();
+    const timer = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+
+        if (distance <= 0) {
+            clearInterval(timer);
+            document.getElementById("countdown").innerHTML = "00 : 00 : 00 : 00";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days.toString().padStart(2, '0');
+        document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+        document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+    }, 1000);
+}
+
+countdown();
+</script>
+
+</body>
+  </html>
+  
