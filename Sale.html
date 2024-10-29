@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Page with Timer</title>
+<style>
+    /* Basic styling */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        margin: 0;
+    }
+    /* Top name styling */
+    .name {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    /* Circular photo styling */
+    .photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+        margin: 15px 0;
+    }
+    .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* Heading styling */
+    .heading {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    /* Telegram button styling */
+    .telegram-btn {
+        background-color: #0088cc;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 15px 0;
+    }
+    /* Small bold heading styling */
+    .small-heading {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    /* Timer styling */
+    .timer {
+        display: flex;
+        gap: 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .timer div {
+        padding: 10px;
+        background-color: #333;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    }
+</style>
+</head>
+<body>
+
+<div class="name">MARKET LOAD</div>
+
+<div class="photo">
+    <img src="https://i.ibb.co/TbXwCdz/1000030545-removebg-preview.png" alt="Your Photo">
+</div>
+
+<div class="heading">TELEGRAM KA NO 1 LOAD CHANNEL</div>
+
+<a class="telegram-btn" href="https://t.me/yourchannel" target="_blank">Join Our Telegram</a>
+
+<div class="small-heading">💰Mauka Hai Lakho Kamane Ka💰</div>
+
+<div class="timer" id="countdown">
+    <div id="days">00</div>
+    <div id="hours">00</div>
+    <div id="minutes">00</div>
+    <div id="seconds">00</div>
+</div>
+
+<a class="telegram-btn" href="https://t.me/yourchannel" target="_blank">Join Our Telegram</a>
+
+<script>
+// Timer script
+function countdown() {
+    const endDate = new Date("YYYY-MM-DDTHH:MM:SS").getTime();  // Set target date and time
+    const timer = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+
+        if (distance <= 0) {
+            clearInterval(timer);
+            document.getElementById("countdown").innerHTML = "00 00 00 00";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days.toString().padStart(2, '0');
+        document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+        document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+    }, 1000);
+}
+
+countdown();
+</script>
+
+</body>
+</html>
