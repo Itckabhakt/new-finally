@@ -58,9 +58,9 @@
         background-color: #0088cc;
         color: white;
         font-weight: bold;
-        font-size: 1em;
-        padding: 10px 20px;
-        width: 300px;
+        font-size: 1.2em; /* Increased font size */
+        padding: 15px 30px; /* Increased padding for a larger button */
+        width: 350px; /* Increased width */
         text-decoration: none;
         display: inline-block;
         border-radius: 15px;
@@ -90,8 +90,8 @@
     /* Timer styling */
     .timer {
         display: flex;
-        gap: 10px;
-        font-size: 1.2em;
+        gap: 5px; /* Reduced gap */
+        font-size: 1em; /* Decreased font size */
         font-weight: bold;
         margin: 10px 0;
         color: #ff0000;
@@ -102,10 +102,10 @@
         align-items: center;
     }
     .timer-number {
-        font-size: 2em;
+        font-size: 1.5em; /* Reduced size for timer numbers */
     }
     .colon {
-        font-size: 2em;
+        font-size: 1.5em; /* Reduced size for colon */
         color: #ff0000;
     }
 </style>
@@ -151,7 +151,7 @@
 <script>
 // Timer script
 function countdown() {
-    const endDate = new Date("2024-12-01T23:59:59").getTime();
+    const endDate = new Date("2024-12-31T23:59:59").getTime();
     const timer = setInterval(() => {
         const now = new Date().getTime();
         const distance = endDate - now;
