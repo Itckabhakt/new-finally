@@ -16,11 +16,13 @@
         font-family: Arial, sans-serif;
         height: 100vh;
         margin: 0;
+        text-align: center;
     }
     /* Top name styling */
     .name {
-        font-size: 2em;
+        font-size: 3em;
         font-weight: bold;
+        margin-top: 20px;
     }
     /* Circular photo styling */
     .photo {
@@ -36,11 +38,12 @@
         height: 100%;
         object-fit: cover;
     }
-    /* Heading styling */
-    .heading {
-        font-size: 1.5em;
+    /* Main heading styling */
+    .main-heading {
+        font-size: 2em;
         font-weight: bold;
         margin: 10px 0;
+        line-height: 1.5em;
     }
     /* Telegram button styling */
     .telegram-btn {
@@ -76,13 +79,13 @@
 </head>
 <body>
 
-<div class="name">MARKET LOAD</div>
+<div class="name">Market Load</div>
 
 <div class="photo">
-    <img src="https://i.ibb.co/TbXwCdz/1000030545-removebg-preview.png" alt="Your Photo">
+    <img src="your-photo-url.jpg" alt="Your Photo">
 </div>
 
-<div class="heading">TELEGRAM KA NO 1 LOAD CHANNEL</div>
+<div class="main-heading">TELEGRAM KA NO 1 LOAD<br>CHANNEL</div>
 
 <a class="telegram-btn" href="https://t.me/yourchannel" target="_blank">Join Our Telegram</a>
 
@@ -100,7 +103,7 @@
 <script>
 // Timer script
 function countdown() {
-    const endDate = new Date("YYYY-MM-DDTHH:MM:SS").getTime();  // Set target date and time
+    const endDate = new Date("2024-12-31T23:59:59").getTime();  // Set target date and time
     const timer = setInterval(() => {
         const now = new Date().getTime();
         const distance = endDate - now;
