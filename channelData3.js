@@ -8,4 +8,13 @@ const channelData = {
             }
         }
     },
+    "Skysports": {
+        "file": "https://mpdfinally.govag55623.workers.dev/linear007-gb-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(skysportscricket)/manifest_720-120.mpd", 
+        "drm": {
+            "clearkey": {
+                "keyId": "00053ac1e9b1231eed3eb4e3540b3ae1",
+                "key": "0f03d8541826af3d9acbac975d751165" 
+            }
+        }
+    }
   };
