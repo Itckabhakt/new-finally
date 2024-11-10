@@ -16,5 +16,14 @@ const channelData = {
                 "key": "0f03d8541826af3d9acbac975d751165" 
             }
         }
+    },
+    "Ten": {
+        "file": "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/manifest.mpd", 
+        "drm": {
+            "clearkey": {
+                "keyId": "9872e439f21f4a299cab249c6554daa3",
+                "key": "0cdfcfe0d0f1fbe100554ce3ef4c4665" 
+            }
+        }
     }
   };
