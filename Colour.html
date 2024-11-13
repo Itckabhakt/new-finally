@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>@finallylivestreaming</title>
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    .jwplayer {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+    }
+    .jwplayer.jw-flag-aspect-mode {
+        min-height: 100%;
+        max-height: 100%;
+    }
+</style>
+<body>
+
+<div id="player"></div>
+
+<script>
+    // Redirect to Telegram if confirmed
+    if (confirm("Join Our Telegram Channel")) {
+        window.location.href = "https://telegram.me/finallylivestreaming";
+    }
+
+    
+
+    window.onload = function() {
+        var playerInstance = jwplayer("player");
+
+        // Define the HLS (m3u8) stream source
+        var source = {
+            "file": "https://jcevents.jiocinema.com/bpk-tv/JC_ColorsCineplexHD/JCHLS/hdntl=exp=1731587473~acl=%2f*~id=956043bc4c5afe02079667909dd6d378~data=hdntl~hmac=7974b8372af52a951ec97c05ed1a4beb73a3392d1f6d7303c0334b6a4f876666/index.m3u8",  // replace with actual .m3u8 URL
+            "type": "hls",
+            "default": true
+        };
+
+        // Player setup with the HLS stream source
+        playerInstance.setup({
+            playlist: [{
+                "sources": [source]
+            }],
+            width: "100%",
+            height: "100%",
+            aspectratio: "16:9",
+            autostart: true,
+        });
+    };
+</script>
+
+</body>
+</html>
