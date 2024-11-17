@@ -27,11 +27,11 @@ const channelData = {
         }
     },
     "s1hd": {
-        "file": "https://mpddailog.govag55623.workers.dev/bpk-tv/69/output/index.mpd", 
+        "file": "https://bpcdncs1.dialog.lk/bpk-token/2aa@furhcwuwg4iysg3wcufmrdpemjbn22n2sbhbcfba/GlobalManifest.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "fae2bdb57c6a5ed6802f91a021505dc1",
-                "key": "4d5d55f218c3671e16f89542c9a80b77" 
+                "keyId": "3a02ff45b8455926b887a97e4c94b49b",
+                "key": "1998ecac328adddb9be2cfee9a30993d" 
             }
         }
     }
