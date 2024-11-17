@@ -27,7 +27,7 @@ const channelData = {
         }
     },
     "s1hd": {
-        "file": "https://bpcdncs3.dialog.lk/bpk-token/2ab@ilqaatufbcamc5yskyewpabagb0cenf35a2kj3ca/GlobalManifest.mpd", 
+        "file": "https://mpddailog.govag55623.workers.dev/bpk-tv/69/output/index.mpd", 
         "drm": {
             "clearkey": {
                 "keyId": "fae2bdb57c6a5ed6802f91a021505dc1",
