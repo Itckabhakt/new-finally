@@ -8,12 +8,12 @@ const channelData = {
             }
         }
     },
-    "Skysports": {
-        "file": "https://mpdfinally.govag55623.workers.dev/linear007-gb-dash1-prd-ak.cdn.skycdp.com/016a/Content/DASH_003_720_120/Live/channel(skysportscricket)/manifest_720-120.mpd", 
+    "Ptvsports": {
+        "file": "https://live4.shoq.com.pk/live/eds/PTV_Sports/DASH/PTV_Sports.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "00053ac1e9b1231eed3eb4e3540b3ae1",
-                "key": "0f03d8541826af3d9acbac975d751165" 
+                "keyId": "9ecad6c4413f8bdc54712ce6c072a2cf",
+                "key": "442df559c369bdada8ba3abe97811575" 
             }
         }
     },
@@ -27,11 +27,11 @@ const channelData = {
         }
     },
     "s1hd": {
-        "file": "https://bpcdncs1.dialog.lk/bpk-token/2aa@furhcwuwg4iysg3wcufmrdpemjbn22n2sbhbcfba/GlobalManifest.mpd", 
+        "file": "https://bpcdncs3.dialog.lk/bpk-token/2ab@ukjdzzlcfneh5mukcptpmsgsthvk0fthdbfjqxba/GlobalManifest.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "3a02ff45b8455926b887a97e4c94b49b",
-                "key": "1998ecac328adddb9be2cfee9a30993d" 
+                "keyId": "506e9d88fcfc59cea6be2100b69da117",
+                "key": "11ed35df34df98373fbf8a45fb02cd44" 
             }
         }
     }
