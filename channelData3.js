@@ -34,5 +34,14 @@ const channelData = {
                 "key": "11ed35df34df98373fbf8a45fb02cd44" 
             }
         }
-    }
+    },
+    "s1fhd": {
+        "file": "https://bpcdncs1.dialog.lk/bpk-token/2aa@jmlk1rcynjnh0qfc2jhvbwuwdnc1sxtn4z3m1cda/GlobalManifest.mpd", 
+        "drm": {
+            "clearkey": {
+                "keyId": "e124cf26aa9754319a7cfd2aceed232b",
+                "key": "c668b95e3bc067ed6b0e97144182e331" 
+            }
+        }
+    },
   };
