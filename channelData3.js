@@ -27,15 +27,6 @@ const channelData = {
         }
     },
     "s1hd": {
-        "file": "https://bpcdncs3.dialog.lk/bpk-token/2ab@ukjdzzlcfneh5mukcptpmsgsthvk0fthdbfjqxba/GlobalManifest.mpd", 
-        "drm": {
-            "clearkey": {
-                "keyId": "506e9d88fcfc59cea6be2100b69da117",
-                "key": "11ed35df34df98373fbf8a45fb02cd44" 
-            }
-        }
-    },
-    "s1fhd": {
         "file": "https://bpcdncs1.dialog.lk/bpk-token/2aa@jmlk1rcynjnh0qfc2jhvbwuwdnc1sxtn4z3m1cda/GlobalManifest.mpd", 
         "drm": {
             "clearkey": {
