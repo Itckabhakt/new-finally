@@ -27,11 +27,11 @@ const channelData = {
         }
     },
     "s1hd": {
-        "file": "https://bpcdncs1.dialog.lk/bpk-token/2aa@jmlk1rcynjnh0qfc2jhvbwuwdnc1sxtn4z3m1cda/GlobalManifest.mpd", 
+        "file": "https://bpcdncs3.dialog.lk/bpk-token/2ab@vrm15fvysn5xulaiqtem0zw5lkne1tsqc0arwlda/GlobalManifest.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "e124cf26aa9754319a7cfd2aceed232b",
-                "key": "c668b95e3bc067ed6b0e97144182e331" 
+                "keyId": "53866c7a3fe85f7f95d114181ef6deea",
+                "key": "ca05070a6ba952af7620093aba7fb87f" 
             }
         }
     },
