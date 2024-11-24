@@ -2,15 +2,7 @@
 
 
 
-
-
-
-
 <html lang="en">
-
-
-
-
 
 
 
@@ -18,15 +10,7 @@
 
 
 
-
-
-
-
   <meta charset="UTF-8">
-
-
-
-
 
 
 
@@ -34,23 +18,11 @@
 
 
 
-
-
-
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
-
-
-
-
-  <title>Telegram - @finallylivestreaming</title>
-
-
-
-
+  <title>Telegram-Live-Cric-Hd</title>
 
 
 
@@ -58,15 +30,7 @@
 
 
 
-
-
-
-
   <style>
-
-
-
-
 
 
 
@@ -74,27 +38,11 @@
 
 
 
-
-
-
-
       margin: 0;
 
 
 
-
-
-
-
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -106,27 +54,11 @@
 
 
 
-
-
-
-
       position: absolute !important;
 
 
 
-
-
-
-
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -138,27 +70,11 @@
 
 
 
-
-
-
-
       margin: 10px;
 
 
 
-
-
-
-
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -170,15 +86,7 @@
 
 
 
-
-
-
-
       padding: 10px 20px;
-
-
-
-
 
 
 
@@ -186,15 +94,7 @@
 
 
 
-
-
-
-
       color: #fff; /* White text color */
-
-
-
-
 
 
 
@@ -202,15 +102,7 @@
 
 
 
-
-
-
-
       border-radius: 5px;
-
-
-
-
 
 
 
@@ -218,15 +110,7 @@
 
 
 
-
-
-
-
       margin: 10px;
-
-
-
-
 
 
 
@@ -234,19 +118,7 @@
 
 
 
-
-
-
-
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -258,15 +130,7 @@
 
 
 
-
-
-
-
       background-color: #0056b3; /* Darker blue on hover */
-
-
-
-
 
 
 
@@ -274,15 +138,7 @@
 
 
 
-
-
-
-
   </style>
-
-
-
-
 
 
 
@@ -290,15 +146,7 @@
 
 
 
-
-
-
-
 <body>
-
-
-
-
 
 
 
@@ -306,93 +154,43 @@
 
 
 
-
-
-
-
   <select id="video-select">
 
 
 
-
-
-
-
-    <option value="English" selected="">english - 4k</option>
-
-
-
-
+    <option value="English" selected="">english - 4K</option>
 
 
 
     
-
  
 
-
-
-   <option value="Hindi">hindi - 4k</option>
-
+   <option value="Hindi">hindi - 1080p</option>
 
 
 
 
 
 
-    <option value="Haryanvi">haryanvi - 4k</option>
+    <option value="Bhojpuri">bhojpuri - 1080p</option>
 
 
 
+    <option value="Telugu">telugu - 1080p</option>
 
 
 
-
-    <option value="Bhojpuri">bhojpuri - 4k</option>
-
+    <option value="Tamil">tamil - 1080p</option>
 
 
 
+    <option value="Bengali">bengali - 1080p</option>
 
 
 
-    <option value="Telugu">telugu - 4k</option>
-
-
-
-
-
-
-
-    <option value="Tamil">tamil - 4k</option>
-
-
-
-
-
-
-
-    <option value="Bengali">bengali - 4k</option>
-
-
-
-
-
-
-
-    <option value="Kannada">kannada - 4k</option>
-
+    <option value="Kannada">kannada - 1080p</option>
     
-
   </select>
-
-
-
-
-
-
-
-
 
 
 
@@ -408,14 +206,6 @@
 
 
 
-
-
-
-
-
-
-
-
   <div id="video"></div>
 
 
@@ -424,19 +214,7 @@
 
 
 
-
-
-
-
-
-
-
-
-  <script>if(confirm("Join Our Telegram Channel @finallylivestreaming")) { window.location.href = "https://telegram.me/finallylivestreaming" }
-
-
-
-
+  <script>if(confirm("Join Our Telegram Channel @finallylivestteaming")) { window.location.href = "https://telegram.me/finallylivestreaming" }
 
 
 
@@ -444,19 +222,9 @@
 
 
 
-
-
-
-
       var videoSources = {
 
-
-
 "Englishp": "https://prod-sports-eng-gm.jiocinema.com/hls/live/2100297/hd_akamai_iosmob_avc_eng_indvsnz_031124/master.m3u8",
-
-
-
-
 
 
 
@@ -464,15 +232,7 @@
 
 
 
-
-
-
-
       "Haryanvip": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109699/hd_akamai_iosmob_avc_odia_indvsnz_031124/master.m3u8",
-
-
-
-
 
 
 
@@ -480,15 +240,7 @@
 
 
 
-
-
-
-
       "Telugup": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109717/hd_akamai_iosmob_avc_tel_indvsnz_031124/master.m3u8",
-
-
-
-
 
 
 
@@ -496,37 +248,18 @@
 
 
 
-
-
-
-
       "Bengalip": "https://prod-sports-north-gm.jiocinema.com/hls/live/2109773/hd_akamai_iosmob_avc_ben_indvsnz_031124/master.m3u8",
-
-
-
-
 
 
 
       "Kannadap": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109723/hd_akamai_iosmob_avc_kan_indvsnz_031124/master.m3u8",
 
 
+      "English": "https://prod-sports-eng-gm.jiocinema.com/hls/live/2112586/hd_akamai_iosmob_avc_eng_ipl_auction_241124/master.m3u8",
 
 
 
-      "English": "https://prod-sports-eng-cf.jiocinema.com/hls/live/2112598/uhd__akamai__ctv__avc__ssaispot__indvssa__eng__m1__151124__c8e9cc1b-eb9a-47bc-b525-e56767798c21/master.m3u8",
-
-
-
-
-
-
-
-      "Hindi": "https://prod-sports-hin-cf.jiocinema.com/hls/live/2100324/uhd__akamai__ctv__avc__ssaispot__indvssa__hin__m1__151124__c8e9cc1b-eb9a-47bc-b525-e56767798c21/master.m3u8",
-
-
-
-
+      "Hindi": "https://prod-sports-hin-gm.jiocinema.com/hls/live/2112604/hd_akamai_iosmob_avc_hin_ipl_auction_241124/master.m3u8",
 
 
 
@@ -534,59 +267,27 @@
 
 
 
-
-
-
-
       "Bhojpuri": "https://prod-sports-north-gm.jiocinema.com/hls/live/2109729/uhd__akamai__ctv__avc__ssaispot__indvssa__bhoj__m1__151124__c8e9cc1b-eb9a-47bc-b525-e56767798c21/master.m3u8",
 
 
 
+      "Telugu": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109717/hd_akamai_iosmob_avc_tel_ipl_auction_241124/master.m3u8",
 
 
 
-
-      "Telugu": "https://prod-sports-south-cf.jiocinema.com/hls/live/2109685/uhd__akamai__ctv__avc__ssaispot__indvssa__tel__m1__151124__c8e9cc1b-eb9a-47bc-b525-e56767798c21/master.m3u8",
-
+      "Tamil": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109711/hd_akamai_iosmob_avc_tam_ipl_auction_241124/master.m3u8",
 
 
 
+      "Bengali": "https://prod-sports-north-gm.jiocinema.com/hls/live/2109773/hd_akamai_iosmob_avc_ben_ipl_auction_241124/master.m3u8",
 
 
 
-      "Tamil": "https://prod-sports-south-cf.jiocinema.com/hls/live/2109679/uhd__akamai__ctv__avc__ssaispot__indvssa__tam__m1__151124__c8e9cc1b-eb9a-47bc-b525-e56767798c21/master.m3u8",
-
-
-
-
-
-
-
-      "Bengali": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109691/uhd__akamai__ctv__avc__ssaispot__indvssa__kan__m1__151124__c8e9cc1b-eb9a-47bc-b525-e56767798c21/master.m3u8",
-
-
-
-
-
-
-
-      "Kannada": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109691/uhd__akamai__ctv__avc__ssaispot__indvssa__kan__m1__151124__c8e9cc1b-eb9a-47bc-b525-e56767798c21/master.m3u8",
-
-
-
-
+      "Kannada": "https://prod-sports-south-gm.jiocinema.com/hls/live/2109723/hd_akamai_iosmob_avc_kan_ipl_auction_241124/master.m3u8",
 
 
 
        };
-
-
-
-
-
-
-
-
 
 
 
@@ -602,27 +303,11 @@
 
 
 
-
-
-
-
-
-
-
-
       document.getElementById("video-select").addEventListener("change", function() {
 
 
 
-
-
-
-
         var selectedValue = this.value;
-
-
-
-
 
 
 
@@ -634,19 +319,7 @@
 
 
 
-
-
-
-
-
-
-
-
         playerInstance.load([{ file: videoSource }]);
-
-
-
-
 
 
 
@@ -654,19 +327,7 @@
 
 
 
-
-
-
-
       });
-
-
-
-
-
-
-
-
 
 
 
@@ -678,15 +339,7 @@
 
 
 
-
-
-
-
         var selectedValue = document.getElementById("video-select").value;
-
-
-
-
 
 
 
@@ -694,23 +347,11 @@
 
 
 
-
-
-
-
         var nextIndex = (currentIndex + 1) % Object.keys(videoSources).length;
 
 
 
-
-
-
-
         var nextLanguage = Object.keys(videoSources)[nextIndex];
-
-
-
-
 
 
 
@@ -722,19 +363,7 @@
 
 
 
-
-
-
-
-
-
-
-
         var videoSource = videoSources[nextLanguage];
-
-
-
-
 
 
 
@@ -742,27 +371,11 @@
 
 
 
-
-
-
-
         playerInstance.play();
 
 
 
-
-
-
-
       });
-
-
-
-
-
-
-
-
 
 
 
@@ -774,19 +387,7 @@
 
 
 
-
-
-
-
       var videoSource = videoSources[selectedValue];
-
-
-
-
-
-
-
-
 
 
 
@@ -798,15 +399,7 @@
 
 
 
-
-
-
-
         autostart: true,
-
-
-
-
 
 
 
@@ -814,15 +407,7 @@
 
 
 
-
-
-
-
         playlist: [{ file: videoSource }]
-
-
-
-
 
 
 
@@ -830,15 +415,7 @@
 
 
 
-
-
-
-
     });
-
-
-
-
 
 
 
@@ -850,19 +427,7 @@
 
 
 
-
-
-
-
-
-
-
-
   <div style="background-color: #0074d9; text-align: center; padding: 10px;">
-
-
-
-
 
 
 
@@ -870,23 +435,11 @@
 
 
 
-
-
-
-
       <button id="joinTelegramButton" style="background-color: #fff; color: #0074d9; border: 2px solid #0074d9; padding: 5px 10px;">JOIN TELEGRAM</button>
 
 
 
-
-
-
-
     </a>
-
-
-
-
 
 
 
@@ -898,19 +451,7 @@
 
 
 
-
-
-
-
-
-
-
-
 </body>
-
-
-
-
 
 
 
