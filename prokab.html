@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Vimeo Video</title>
+    <title>@finallylivestreaming</title>
     <style>
-        /* Responsive video container */
-        .video-container {
-            padding: 56.25% 0 0 0; /* 16:9 Aspect Ratio */
-            position: relative;
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
         }
 
-        .video-container iframe {
-            position: absolute;
+        .iframe-container {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border: 0;
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 110%; /* Adjust to control how much of the bottom gets cut off */
         }
     </style>
 </head>
 <body>
-  <script>
-        if (confirm("Join Our Telegram Channel @finallylivestreaming")) {
-        window.location.href = "https://telegram.me/finallylivestreaming";
-        }
-    
-  </script>
-    <div class="video-container">
-        <iframe 
-            src="https://vimeo.com/event/4747239/embed" 
-            frameborder="0" 
-            allow="autoplay; fullscreen; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
+    <div class="iframe-container">
+        <iframe src="https://vimeo.com/event/4747239/embed" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen></iframe>
     </div>
 </body>
 </html>
