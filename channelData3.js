@@ -26,12 +26,12 @@ const channelData = {
             }
         }
     },
-    "s1hd": {
-        "file": "https://bpcdncs3.dialog.lk/bpk-token/2ab@t5rhswhuh4i04z1dkbdbgdpen52p22jeeu3n1yba/GlobalManifest.mpd", 
+    "sk": {
+        "file": "https://linear-s.media.skyone.co.nz/sky-sport-2.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "75df97fab5855b3e96b23070fc781c6f",
-                "key": "9cb304d0f35278ec479c58e5c624929c" 
+                "keyId": "ef909acce1f53f5db2a1cdafd2e90000",
+                "key": "aba1269d685f474fbddf97ce2b45c725" 
             }
         }
     },
