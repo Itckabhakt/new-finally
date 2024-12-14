@@ -1,10 +1,10 @@
 const channelData = {
     "cricbuzz": {
-        "file": "https://live6.shoq.com.pk/live/eds/Criclife2/DASH/Criclife2.mpd", 
+        "file": "https://uselector.cdn.intigral-ott.net/CRL2/CRL2.isml/manifest.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "4301796d6d67374043c4a43c18dff7ea",
-                "key": "96a3dc8766317aa169149a604928ebb6" 
+                "keyId": "77889c7295e1f113852aa6030242b8e4",
+                "key": "ec8c522d46888a15ff6533aa28ccd7f5" 
             }
         }
     },
