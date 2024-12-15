@@ -26,12 +26,12 @@ const channelData = {
             }
         }
     },
-    "sk": {
-        "file": "https://linear-s.media.skyone.co.nz/sky-sport-2.mpd", 
+    "newwillow": {
+        "file": "https://cors-anywhere.ammoapps.com/https://dfwlive-v1-c1p3-sponsored.akamaized.net/Content/HLS.cps/Live/channel(WILLHD-3291.dfw.1080)/index.m3u8", 
         "drm": {
             "clearkey": {
-                "keyId": "ef909acce1f53f5db2a1cdafd2e90000",
-                "key": "aba1269d685f474fbddf97ce2b45c725" 
+                "keyId": "59ed8dc9d4a48857ef8e5865919496cc",
+                "key": "0d3680bd8b349deda8b7fdd1da71b7f8" 
             }
         }
     },
