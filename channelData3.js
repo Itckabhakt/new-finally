@@ -1,10 +1,10 @@
 const channelData = {
-    "cricbuzz": {
-        "file": "https://uselector.cdn.intigral-ott.net/CRL2/CRL2.isml/manifest.mpd", 
+    "T1": {
+        "file": "https://abfdm2saaaaaaaamljqrv7ybrrx7h.47348d5020154bfaac6dd4418cd23c5d.emt.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/rdznpzcmct/out/v1/355324ed98a94cbebbaff4bad0cd28ce/cenc.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "77889c7295e1f113852aa6030242b8e4",
-                "key": "ec8c522d46888a15ff6533aa28ccd7f5" 
+                "keyId": "ae26845bd33038a9c0774a0981007294",
+                "key": "63ac662dde310cfb4cc6f9b43b34196d" 
             }
         }
     },
