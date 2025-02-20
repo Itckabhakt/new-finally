@@ -35,12 +35,12 @@ const channelData = {
             }
         }
     },
-    "newtra": {
-        "file": "https://cors-anywhere.ammoapps.com/https://dfwlive-v1-c1p3-sponsored.s.llnwi.net/Content/HLS.cps/Live/channel(WILLXT-3292.dfw.1080)/index.m3u8", 
+    "new": {
+        "file": "https://aba5sdmaaaaaaaamdgp3ryzabcel7.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/1koccf0pf1/out/v1/190f1d69a3d5467f8fb7d9df4339bc49/cenc.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "1f52934d28a25c51a5dd577a650dcece",
-                "key": "323a46b02a31172c2475406e56fd3be6" 
+                "keyId": "cb8daf414566aa17d06f8294f3f3b444",
+                "key": "89d58908a57d70ef87bf16c9b5821ca2" 
             }
         }
     },
