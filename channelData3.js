@@ -27,11 +27,11 @@ const channelData = {
         }
     },
     "newwillow": {
-        "file": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/emnka3r3gq/out/v1/f1edd397d7ca4378bfc0c51ce2c8e964/7c7e84e8-6bab-4640-8b55-458ea953fe90-cenc.mpd", 
+        "file": "https://aba5sdmaaaaaaaamidug47tdi5buy.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/l0phze3ehz/out/v1/fe9782633a364a6a84c9410f26d9b2c4/cenc.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "a99ea538538baedbbb37a3fdab0c57bc",
-                "key": "4a05974e9ee1760feb0a34b031cbe0e3" 
+                "keyId": "4a5191838da17a2ab771f4258fad347f",
+                "key": "54b7a084437459368eed07d182ad644c" 
             }
         }
     },
