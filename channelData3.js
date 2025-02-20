@@ -27,11 +27,11 @@ const channelData = {
         }
     },
     "newwillow": {
-        "file": "https://cors-anywhere.ammoapps.com/https://dfwlive-v1-c1p3-sponsored.akamaized.net/Content/HLS.cps/Live/channel(WILLHD-3291.dfw.1080)/index.m3u8", 
+        "file": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/emnka3r3gq/out/v1/f1edd397d7ca4378bfc0c51ce2c8e964/7c7e84e8-6bab-4640-8b55-458ea953fe90-cenc.mpd", 
         "drm": {
             "clearkey": {
-                "keyId": "59ed8dc9d4a48857ef8e5865919496cc",
-                "key": "0d3680bd8b349deda8b7fdd1da71b7f8" 
+                "keyId": "a99ea538538baedbbb37a3fdab0c57bc",
+                "key": "4a05974e9ee1760feb0a34b031cbe0e3" 
             }
         }
     },
